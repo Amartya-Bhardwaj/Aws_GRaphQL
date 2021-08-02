@@ -1,0 +1,21 @@
+{
+    "appName": "graphql",
+    "roleName": "pinpointLambdaRole0ef3795e",
+    "cloudformationPolicyName": "cloudformationPolicy0ef3795e",
+    "cloudWatchPolicyName": "cloudWatchPolicy0ef3795e",
+    "pinpointPolicyName": "pinpointPolicy0ef3795e",
+    "authPolicyName": "pinpoint_amplify_0ef3795e",
+    "unauthPolicyName": "pinpoint_amplify_0ef3795e",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
